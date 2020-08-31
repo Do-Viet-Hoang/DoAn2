@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quản trị</title>
+	<link rel="stylesheet" type="text/css" href="QuanTri.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	<div class="Menu">
+		<div class="p1">
+			<div class="logo">
+				<img src="./AnhTrangChu/logo1.png">
+			</div>
+			<div class="messges">
+				<a href="#"><i class="far fa-envelope"></i></a>
+			</div>
+		</div>
+		<div class="p2">
+			<div class="anhDd">
+				<img src="./AnhQuanTri/anhDaiDien.jpg">
+			</div>
+			<div class="chu">
+				<h3>Đỗ Việt Hoàng</h3>
+			</div>
+		</div>
+		<div class="p3">
+			<ul>
+				<li>
+					<a href="#" onclick="openOnClik('dienThoai')">
+					<i class="fas fa-mobile-alt"></i>
+					<h4 >Quản lý điện thoại</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#"  onclick="openOnClik('khachHang')">
+					<i class="fas fa-users"></i>
+					<h4>Khác hàng</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#" onclick="openOnClik('nhaCC')">
+					<i class="fas fa-user-tie"></i>
+					<h4>Quản lý nhà cung cấp</h4>
+					</a>
+				</li>
+				<li >
+					<a href="#" onclick="openOnClik('hoadonBan')">
+					<i class="fas fa-file-invoice-dollar"></i>
+					<h4>Quản lý hoá đơn bán</h4>
+					</a>
+				</li>
+				<li >
+					<a href="#" onclick="openOnClik('hoanDonNhap')">
+					<i class="fas fa-file-invoice-dollar"></i>
+					<h4>Quản lý hoá đơn nhập</h4>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<i class="fas fa-chart-bar"></i>
+					<h4>Thống kê hoá đơn</h4>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="thanhNgang">
+		<div class="thongBao">
+			<i class="fas fa-bell"></i>
+		</div>
+		<div class="timKiem">
+			<input id="id1" class="timKiem" name="key" type="text" placeholder="Bạn đang nghĩ gì?">
+			<input id="id2" type="button" name="button" value="Search">
+		</div>
+		<div class="anh1">
+			<a href="#">
+				<img src="./AnhQuanTri/anhDaiDien.jpg">
+			</a>
+		</div>
+		<div class="chu1">
+			<h3>doviethoang3001@gmail.com</h3>
+			<h4>0984638735</h4>
+		</div>
+	</div>
+	<div class="tieuDe">
+		<a href="ThemSanPham.html"><input id="ad1" type="button" name="button" value="Thêm thông tin"></a>
+	<div id="dienThoai" class="ctiet" >
+			<table class="table1">
+				<tr id="id1">
+					<th>STT</th>
+					<th>Mã điện thoại</th>
+					<th>Hình ảnh</th>
+					<th>Hãng điện thoại</th>
+					<th>Tên điện thoại</th>
+					<th>Màn hình</th>
+					<th>Hệ điều hành</th>
+					<th>CPU</th>
+					<th>Camera</th>
+					<th>Ram</th>
+					<th>Bộ nhớ trong</th>
+					<th>Pin</th>
+					<th>Sửa/ Xoá</th>
+				</tr>
+				<tr id="id2">
+					<td>1</td>
+					<td>IPXSMAX521</td>
+					<td><img src="./AnhTrangChu/iphoneXmax.jpg"></td>
+					<td>IPhone</td>
+					<td>IPhone XS MAX 512GB</td>
+					<td>OLED, 6.5"</td>
+					<td>IOS 12</td>
+					<td>Apple A12</td>
+					<td>Chính 12 MP</td>
+					<td>4 GB</td>
+					<td>512 GB</td>
+					<td>3174 mAh</td>
+					<td id="input2">
+					<center>
+					<a href="SuaSanPham.html">
+					<input type="button" name="button" value="Sửa">
+					</a>
+					<input type="button" onclick="Xoa2()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="id3">
+					<td>2</td>
+					<td>IPXSMAX256</td>
+					<td><img src="./AnhTrangChu/iphoneXmax.jpg"></td>
+					<td>IPhone</td>
+					<td>IPhone XS MAX 256GB</td>
+					<td>OLED, 6.5"</td>
+					<td>IOS 12</td>
+					<td>Apple A12</td>
+					<td>Chính 12 MP</td>
+					<td>4 GB</td>
+					<td>256 GB</td>
+					<td>3174 mAh</td>
+					<td id="input2">
+					<center>
+					<a href="SuaSanPham.html">
+					<input type="button" name="button" value="Sửa">
+					</a>
+					<input type="button" onclick="Xoa3()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="id4">
+					<td>3</td>
+					<td>IPXSMAX64</td>
+					<td><img src="./AnhTrangChu/iphoneXmax.jpg"></td>
+					<td>IPhone</td>
+					<td>IPhone XS MAX 64GB</td>
+					<td>OLED, 6.5"</td>
+					<td>IOS 12</td>
+					<td>Apple A12</td>
+					<td>Chính 12 MP</td>
+					<td>4 GB</td>
+					<td>64 GB</td>
+					<td>3174 mAh</td>
+					<td id="input2">
+					<center>
+					<a href="SuaSanPham.html">
+					<input type="button" name="button" value="Sửa">
+					</a>
+					<input type="button" onclick="Xoa4()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="id5">
+					<td>4</td>
+					<td>IPXS</td>
+					<td><img src="./AnhTrangChu/iphoneXmax.jpg"></td>
+					<td>IPhone</td>
+					<td>IPhone XS 256GB</td>
+					<td>OLED, 5.8"</td>
+					<td>IOS 12</td>
+					<td>Apple A12</td>
+					<td>Chính 12 MP</td>
+					<td>4 GB</td>
+					<td>256 GB</td>
+					<td>2658 mAh</td>
+					<td id="input2">
+					<center>
+					<a href="SuaSanPham.html">
+					<input type="button" name="button" value="Sửa">
+					</a>
+					<input type="button" onclick="Xoa5()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="id6">
+					<td>5</td>
+					<td>IPXS256</td>
+					<td><img src="./AnhTrangChu/iphoneXmax.jpg"></td>
+					<td>IPhone</td>
+					<td>IPhone XS 256GB</td>
+					<td>OLED, 5.8"</td>
+					<td>IOS 12</td>
+					<td>Apple A12</td>
+					<td>Chính 12 MP</td>
+					<td>4 GB</td>
+					<td>256 GB</td>
+					<td>2658 mAh</td>
+					<td id="input2">
+					<center>
+					<a href="SuaSanPham.html">
+					<input type="button" name="button" value="Sửa">
+					</a>
+					<input type="button" onclick="Xoa6()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="id7">
+					<td>6</td>
+					<td>IPXSMAX521</td>
+					<td><img src="./AnhTrangChu/iphoneXmax.jpg"></td>
+					<td>IPhone</td>
+					<td>IPhone XS MAX 512GB</td>
+					<td>OLED, 6.5"</td>
+					<td>IOS 12</td>
+					<td>Apple A12</td>
+					<td>Chính 12 MP</td>
+					<td>4 GB</td>
+					<td>512 GB</td>
+					<td>3174 mAh</td>
+					<td id="input2">
+					<center>
+					<a href="SuaSanPham.html">
+					<input type="button" name="button" value="Sửa">
+					</a>
+					<input type="button" onclick="Xoa7()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="id8">
+					<td>7</td>
+					<td>IPXSMAX256</td>
+					<td><img src="./AnhTrangChu/iphoneXmax.jpg"></td>
+					<td>IPhone</td>
+					<td>IPhone XS MAX 256GB</td>
+					<td>OLED, 6.5"</td>
+					<td>IOS 12</td>
+					<td>Apple A12</td>
+					<td>Chính 12 MP</td>
+					<td>4 GB</td>
+					<td>256 GB</td>
+					<td>3174 mAh</td>
+					<td id="input2">
+					<center>
+					<a href="SuaSanPham.html">
+					<input type="button" name="button" value="Sửa">
+					</a>
+					<input type="button" onclick="Xoa8()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="id9">
+					<td>8</td>
+					<td>IPXSMAX64</td>
+					<td><img src="./AnhTrangChu/iphoneXmax.jpg"></td>
+					<td>IPhone</td>
+					<td>IPhone XS MAX 64GB</td>
+					<td>OLED, 6.5"</td>
+					<td>IOS 12</td>
+					<td>Apple A12</td>
+					<td>Chính 12 MP</td>
+					<td>4 GB</td>
+					<td>64 GB</td>
+					<td>3174 mAh</td>
+					<td id="input2">
+					<center>
+					<a href="SuaSanPham.html">
+					<input type="button" name="button" value="Sửa">
+					</a>
+					<input type="button" onclick="Xoa9()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+			</table>
+	</div>
+	<div  id="khachHang" class="ctiet" style="display:none">
+			<table class="table2">
+				<tr>
+					<th>STT</th>
+					<th>Tên tài khoản</th>
+					<th>Tên khách hàng</th>
+					<th>Địa chỉ</th>
+					<th>Số điện thoại</th>
+					<th>Sửa/Xóa</th>
+				</tr>
+				<tr id="kh2">
+					<td>1</td>
+					<td>viethoang99</td>
+					<td>Đỗ Việt Hoàng</td>
+					<td>Hà Nội</td>
+					<td>0984638735</td>
+					<td id="input2">
+					<center>
+					<a href="suaKhachHang.html">
+					<input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa12()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh3">
+					<td>2</td>
+					<td>doviet2000</td>
+					<td>Đỗ Quang Việt</td>
+					<td>Hà Nội</td>
+					<td>0967890945</td>
+					<td id="input2">
+					<center>
+					<a href="suaKhachHang.html">
+					<input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa13()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh4">
+					<td>3</td>
+					<td>lamnguyen</td>
+					<td>Nguyễn Ngọc Lâm</td>
+					<td>Ba Vì</td>
+					<td>0964204323</td>
+					<td id="input2">
+					<center>
+					<a href="suaKhachHang.html">
+					<input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa14()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh5">
+					<td>4</td>
+					<td>nguyenvanduc</td>
+					<td>Nguyễn Văn Đức</td>
+					<td>Hưng Yên</td>
+					<td>0963256987</td>
+					<td id="input2">
+					<a href="suaKhachHang.html">
+					<input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa15()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh6">
+					<td>5</td>
+					<td>tuananhdo</td>
+					<td>Đỗ Tuấn Anh</td>
+					<td>Hải Dương</td>
+					<td>0967890623</td>
+					<td id="input2">
+					<center>
+					<a href="suaKhachHang.html">
+					<input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa16()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+			</table>
+	</div>
+	<div  id="nhaCC" class="ctiet" style="display:none">
+			<table class="table2">
+				<tr>
+					<th>STT</th>
+					<th>Mã nhà cung cấp</th>
+					<th>Tên khách hàng</th>
+					<th>Địa chỉ</th>
+					<th>Số điện thoại</th>
+					<th>Sửa/Xóa</th>
+				</tr>
+				<tr id="kh2">
+					<td>1</td>
+					<td>NHCC01</td>
+					<td>Samsung</td>
+					<td>Hà Nội</td>
+					<td>0984638735</td>
+					<td id="input2">
+					<center>
+					<a href="suaNhaCungCap.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa12()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh3">
+					<td>2</td>
+					<td>NHCC02</td>
+					<td>Iphone</td>
+					<td>Hồ Chí Minh</td>
+					<td>0967890945</td>
+					<td id="input2">
+					<center>
+					<a href="suaNhaCungCap.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa13()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh4">
+					<td>3</td>
+					<td>NHCC03</td>
+					<td>Oppo</td>
+					<td>Đà Nẵng</td>
+					<td>0964204323</td>
+					<td id="input2">
+					<center>
+					<a href="suaNhaCungCap.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa14()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh5">
+					<td>4</td>
+					<td>NHCC04</td>
+					<td>Xiaomi</td>
+					<td>Hưng Yên</td>
+					<td>0963256987</td>
+					<td id="input2">
+					<center>
+					<a href="suaNhaCungCap.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa15()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+		</table>
+	</div>
+	<div  id="hoadonBan" class="ctiet" style="display:none">
+			<table class="table2">
+				<tr>
+					<th>STT</th>
+					<th>Mã hóa đơn bán</th>
+					<th>Tên khách hàng</th>
+					<th>Địa chỉ</th>
+					<th>Số điện thoại</th>
+					<th>Số lượng</th>
+					<th>Mã sản phẩm</th>
+					<th>Giá bán</th>
+					<th>Ngày bán</th>
+					<th>Sửa/Xóa</th>
+				</tr>
+				<tr id="kh2">
+					<td>1</td>
+					<td>HB01</td>
+					<td>Đỗ Việt Hoàng</td>
+					<td>Hà Nội</td>
+					<td>0984638735</td>
+					<td>1</td>
+					<td>DT01</td>
+					<td>20.000.000</td>
+					<td>20/10/2019</td>
+					<td id="input2">
+					<center>
+					<a href="suaHoaDonBan.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa12()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh3">
+					<td>2</td>
+					<td>HB02</td>
+					<td>Đỗ Quang Việt</td>
+					<td>Hà Nội</td>
+					<td>0984638735</td>
+					<td>1</td>
+					<td>DT02</td>
+					<td>20.000.000</td>
+					<td>20/10/2019</td>
+					<td id="input2">
+					<center>
+					<a href="suaHoaDonBan.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa13()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh4">
+					<td>3</td>
+					<td>HB03</td>
+					<td>Nguyễn Ngọc Lâm</td>
+					<td>Hà Nội</td>
+					<td>0984638735</td>
+					<td>2</td>
+					<td>DT03</td>
+					<td>20.000.000</td>
+					<td>20/10/2019</td>
+					<td id="input2">
+					<center>
+					<a href="suaHoaDonBan.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa14()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh5">
+					<td>4</td>
+					<td>HB04</td>
+					<td>Lê Văn A</td>
+					<td>Hà Nội</td>
+					<td>0984638735</td>
+					<td>1</td>
+					<td>DT04</td>
+					<td>20.000.000</td>
+					<td>20/10/2019</td>
+					<td id="input2">
+					<center>
+					<a href="suaHoaDonBan.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa15()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh6">
+					<td>5</td>
+					<td>HB05</td>
+					<td>Nguyễn Văn C</td>
+					<td>Hà Nội</td>
+					<td>0984638735</td>
+					<td>2</td>
+					<td>DT05</td>
+					<td>20.000.000</td>
+					<td>20/10/2019</td>
+					<td id="input2">
+					<center>
+					<a href="suaHoaDonBan.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa16()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+			</table>
+	</div>
+	<div  id="hoanDonNhap" class="ctiet" style="display:none">
+			<table class="table2">
+				<tr>
+					<th>STT</th>
+					<th>Mã hóa đơn nhập</th>
+					<th>Tên nhà cung cấp</th>
+					<th>Địa chỉ</th>
+					<th>Số điện thoại</th>
+					<th>Số lượng</th>
+					<th>Mã sản phẩm</th>
+					<th>Gía nhập</th>
+					<th>Ngày nhập</th>
+					<th>Sửa/Xóa</th>
+				</tr>
+				<tr id="kh2">
+					<td>1</td>
+					<td>HN01</td>
+					<td>OPPO</td>
+					<td>Hà Nội</td>
+					<td>0984638735</td>
+					<td>1</td>
+					<td>DT01</td>
+					<td>19.000.000</td>
+					<td>20/10/2018</td>
+					<td id="input2">
+					<center>
+					<a href="suaHoaDonNhap.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa12()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh3">
+					<td>2</td>
+					<td>HN02</td>
+					<td>Apple</td>
+					<td>Hà Nội</td>
+					<td>0984638735</td>
+					<td>1</td>
+					<td>DT02</td>
+					<td>19.000.000</td>
+					<td>20/10/2018</td>
+					<td id="input2">
+					<center>
+					<a href="suaHoaDonNhap.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa13()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh4">
+					<td>3</td>
+					<td>HN03</td>
+					<td>Samsung</td>
+					<td>Hà Nội</td>
+					<td>0984638735</td>
+					<td>2</td>
+					<td>DT03</td>
+					<td>19.000.000</td>
+					<td>20/10/2018</td>
+					<td id="input2">
+					<center>
+					<a href="suaHoaDonNhap.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa14()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh5">
+					<td>4</td>
+					<td>HN04</td>
+					<td>Xaoimi</td>
+					<td>Hà Nội</td>
+					<td>0984638735</td>
+					<td>1</td>
+					<td>DT04</td>
+					<td>19.000.000</td>
+					<td>20/10/2018</td>
+					<td id="input2">
+					<center>
+					<a href="suaHoaDonNhap.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa15()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+				<tr id="kh6">
+					<td>5</td>
+					<td>HN05</td>
+					<td>Sony</td>
+					<td>Hà Nội</td>
+					<td>0984638735</td>
+					<td>2</td>
+					<td>DT05</td>
+					<td>19.000.000</td>
+					<td>20/10/2018</td>
+					<td id="input2">
+					<center>
+					<a href="suaHoaDonNhap.html"><input type="button" name="button" value="Sửa"></a>
+					<input type="button" onclick="Xoa16()" name="button" value="Xoá">
+					</center>
+					</td>
+				</tr>
+			</table>
+	</div>
+</body>
+<script type="text/javascript">
+	function openOnClik(name)
+	{
+		var i;
+		var x=document.getElementsByClassName('ctiet');
+		for(i=0;i<x.length;i++)
+		{
+			x[i].style.display="none";
+		}
+		document.getElementById(name).style.display = "block";
+			}
+</script>
+<script>
+        function Xoa2() {
+            var xoa = confirm("Bạn có muốn xóa không");
+            if (xoa == true) {
+                document.getElementById('id2').remove();
+            }
+        }
+        function Xoa3() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('id3').remove();
+            }
+        }
+        function Xoa4() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('id4').remove();
+            }
+        }
+        function Xoa5() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('id5').remove();
+            }
+        }
+        function Xoa6() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('id6').remove();
+            }
+        }
+            function Xoa7() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('id7').remove();
+            }
+        }
+        function Xoa8() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('id8').remove();
+            }
+        }
+        function Xoa9() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('id9').remove();
+            }
+        }
+          function Xoa10() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('id10').remove();
+            }
+        }
+        function Xoa11() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('id11').remove();
+            }
+        }
+        function Xoa12() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('kh2').remove();
+            }
+        }
+        function Xoa13() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('kh3').remove();
+            }
+        }
+        function Xoa14() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('kh4').remove();
+            }
+        }
+        function Xoa15() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('kh5').remove();
+            }
+        }
+            function Xoa16() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('kh6').remove();
+            }
+        }
+        function Xoa17() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('kh7').remove();
+            }
+        }
+        function Xoa18() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('kh8').remove();
+            }
+        }
+        function Xoa19() {
+            var xoa = confirm("Bạn có muốn xóa không?");
+            if (xoa == true) {
+                document.getElementById('kh9').remove();
+            }
+        }
+    </script>
+</html>

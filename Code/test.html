@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+</head>
+<body>
+<form id="frmCongChuc">
+	<p>Thông tin công chức</p>
+	<p>
+		Mã công chức: <input type="test" id="txtMa"><br>
+		Tên công chức: <input type="test" id="txtTen"><br>
+		Giới tính: <input type="radio" name="name" id="Nam">Nam
+		Giới tính: <input type="radio" name="nu" id="Nu"><br>
+		Trình độ:
+		<select id="sltTrinhDo">
+			<option>Trung cấp</option>
+			<option>Cao đẳng</option>
+			<option>Đại học</option>
+			<option>Thạc sỹ</option>
+		</select><br>
+		Chức vụ:
+		<select id="sltChucVu">
+			<option>Chuyên Viên</option>
+			<option>Trưởng Phòng</option>
+			<option>Giám đốc</option>
+		</select><br>
+		<input type="button" value="Thêm" accesskey="T">
+		<input type="button" value="Bỏ Qua" accesskey="B"><br>
+	</p>
+</form>
+</body>
+<script type="text/javascript">
+	function CongChuc(ma, ten, gioiTinh, trinhDo, chucVu)
+	{
+		
+	}
+	function KtmaCongChuc(ma) {
+		if (ma.match(/[0-9]{6}/==ma)
+			return true;
+		else 
+			return false;
+	}
+	function KttenCongChuc(ten){
+		var rg =/[0-9]{6}/;
+		var rg = /[]/
+		var tam=ten.match(rg);
+		if (tam==ten)
+			return true;
+		else 
+			return false;
+	}
+</script>
+</html>

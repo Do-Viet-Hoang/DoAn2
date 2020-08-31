@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang thanh toán</title>
+	<link rel="stylesheet" type="text/css" href="thanhToan.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	<div class="First">
+		<div class="logo">
+			<img src="./AnhTrangChu/Logo1.png">
+		</div>
+		<div class="search">
+			<input class="timKiem" id="search" name="key" type="text" placeholder="Bạn đang nghĩ gì?">
+			<button class="button" onclick="timKiem()" style="color: white">
+			Search</button>
+		</div>
+		<div class="Login">
+			<a href="DangNhap.html#"><i class="fas fa-sign-in-alt"></i></a>
+			<a href="GioHang.html"><i class="fas fa-cart-plus"></i></a>
+		</div>
+		<div class="LienHe">
+                <ul>
+                  <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a href="tel:0984638735">0984.638.735</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                   <a href="mailto: CSKH@dienthoaitancuong.com"> DoVietHoang3001@gmail.com</a>
+                  </li>
+                </ul>
+        </div>
+	</div>
+	<div class="Menu">
+		<ul>
+			<li id="a1">
+				<a href="TrangChu.html"><p>TRANG CHỦ</p></a>
+			</li>
+			<li>
+				<a href="DanhSachIphone.html"><p>IPHONE</p></a>
+			</li>
+			<li>
+				<a href="DanhSachSamSung.html"><p>SAMSUNG</p></a>
+			</li>
+			<li>
+				<a href="DanhSachOppo.html"><p>OPPO</p></a>
+			</li>
+			<li>
+				<a href="GioiThieu.html"><p>GIỚI THIỆU</p></a>
+			</li>
+		</ul>
+	</div>
+<div class="DangNhap">
+		<h4 id="dong1">Cảm ơn bạn đã mua hàng tại Javenist!</h4>
+		<ul>
+			<li class="taiKhoan">
+				<h6>Tên người mua *</h6>
+				<input  name="key" type="text" placeholder="Nhập tên tài khoản">
+			</li>
+			<li class="taiKhoan" >
+				<h6>Địa chỉ *</h6>
+				<input name="key" type="text" placeholder="Nhập mật khẩu">
+			</li>
+			<li class="taiKhoan" >
+				<h6>Số điện thoại *</h6>
+				<input name="key" type="text" placeholder="Nhập lại mật khẩu">
+			</li>
+			<li class="taiKhoan" >
+				<h6>Email *</h6>
+				<input name="key" type="text" placeholder="Nhập tên Email">
+			</li>
+			<li class="taiKhoan" >
+				<h6>Địa chỉ giao hàng *</h6>
+				<input name="key" type="text" placeholder="Nhập số điện thoại">
+			</li>
+		</ul>
+	</div>
+	<div class="sp">
+		<table>
+			<tr>
+				<td>
+					<img src="./AnhTrangChu/iphoneXmax256.jpg">
+				</td>
+				<td>
+					Iphone Xs Max 256GB
+				</td>
+				<td>
+					35.990.000 Vnđ
+				</td>
+				<td>
+					<input type="number" class="input-text qty text" step="1" min="0" max="" name="cart[48fb9c0fbe09027bba55d1562ea9becd][qty]" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric">
+				</td>
+				<td>
+					35.990.000 Vnđ
+				</td>
+			</tr>
+			<tr>
+			<td>
+					<img src="./AnhTrangChu/oppofindx.jpg">
+				</td>
+				<td>
+					OPPO Find X
+				</td>
+				<td>
+					19.990.000 Vnđ
+				</td>
+				<td>
+					<input type="number" class="input-text qty text" step="1" min="0" max="" name="cart[48fb9c0fbe09027bba55d1562ea9becd][qty]" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric">
+				</td>
+				<td>
+					19.990.000 Vnđ
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="./AnhTrangChu/galaxys10.jpg">
+				</td>
+				<td>
+					Samsung Galaxy S10
+				</td>
+				<td>
+					20.990.000 Vnđ
+				</td>
+				<td>
+					<input type="number" class="input-text qty text" step="1" min="0" max="" name="cart[48fb9c0fbe09027bba55d1562ea9becd][qty]" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric">
+				</td>
+				<td>
+					20.990.000 Vnđ
+				</td>
+			</tr>
+			<tr id="tr4">
+				<td>
+					<img src="./AnhTrangChu/oppor17.jpg">
+				</td>
+				<td>
+					OPPO R17 Pro
+				</td>
+				<td>
+					15.990.000 Vnđ
+				</td>
+				<td>
+					<input type="number" class="input-text qty text" step="1" min="0" max="" name="cart[48fb9c0fbe09027bba55d1562ea9becd][qty]" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric">
+				</td>
+				<td>
+					15.990.000 Vnđ
+				</td>
+			</tr>
+				<tr id="tr5">
+				<td>
+					<img src="./AnhTrangChu/iphonexr.jpg">
+				</td>
+				<td>
+					Iphone XR 128GB 
+				</td>
+				<td>
+					21.990.000 Vnđ
+				</td>
+				<td>
+					<input type="number" class="input-text qty text" step="1" min="0" max="" name="cart[48fb9c0fbe09027bba55d1562ea9becd][qty]" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric">
+				</td>
+				<td>
+					21.990.000 Vnđ
+				</td>
+			</tr>
+			<tr id="tr6">
+				<td>
+					<img src="./AnhTrangChu/ssa9.jpg">
+				</td>
+				<td>
+					Samsung Galaxy A9
+				</td>
+				<td>
+					8.990.000 Vnđ
+				</td>
+				<td>
+					<input type="number" class="input-text qty text" step="1" min="0" max="" name="cart[48fb9c0fbe09027bba55d1562ea9becd][qty]" value="1" title="SL" size="4" pattern="[0-9]*" inputmode="numeric">
+				</td>
+				<td>
+					8.990.000 Vnđ
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="tong">
+		<h3>Tổng:</h3>
+		<table class="table2">
+			<tr>
+				<td><b>Số lượng:<b></td>
+				<td>6</td>
+			</tr>
+			<tr>	
+				<td><b>Tổng cộng:</b></td>
+				<td>123.940.000 Vnđ</td>
+			</tr>
+		</table>
+		<div class="thanhToan">
+		<a href="#">
+			<button>
+				<i class="fas fa-money-check-alt"></i> Thanh Toán
+			</button>
+		</a>
+	</div>
+	</div>
+		<div class="End">
+	<ul>
+		<li>
+			<h2>Sản Phẩm Nổi Bật</h2>
+			<h4>IPHONE XS MAX</h4>
+			<h4>OPPO Find X</h4>
+			<h4>SAMSUNG GALAXY S10+</h4>
+			<h4>IPHONE 8 PLUS</h4>
+		</li>
+		<li>
+			<h2>Mua hàng trực tuyến</h2>
+			<h4>Điều khoản mua hàng</h4>
+			<h4>Chính sách giao hàng</h4>
+			<h4>Chính sách bảo mật</h4>
+		</li>
+		<li>
+			<h2>Hỗ Trợ</h2>
+			<h4>Trung tâm CSKH</h4>
+			<h4>Kiểm tra máy chính hãng</h4>
+			<h4>Hướng dẫn sử dụng</h4>
+		</li>
+		<li>
+			<h2>Giới Thiệu</h2>
+			<h4>Điện Thoại</h4>
+			<h4>Việc làm</h4>
+			<h4>Tin tức</h4>
+		</li>
+		<li>
+			<h2>Liên Hệ</h2>
+			<h4>1800-577-776</h4>
+				<p>Tổng đài hỗ trợ miễn phí</p>
+				<p>Từ T2-T6 : 8h-21h</p>
+				<p>T7: 8h-17h40</p>
+				<p>CN & ngày lễ: nghỉ</p>
+			</li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript">
+	function timKiem()
+	{
+		var tb = document.getElementById('search');
+		if (tb.value.toLowerCase().indexOf('iphone') != -1) {
+			window.location.assign("DanhSachIphone.html");
+		} else if (tb.value.toLowerCase().indexOf('samsung') != -1) {
+			//chuyển hướng đến trang samsung
+			window.location.assign("DanhSachSamSung.html");
+		} else if (tb.value.toLowerCase().indexOf('oppo') != -1) {
+			//chuyển hướng đến trang iphone
+			window.location.assign("DanhSachOppo.html");
+		} else {
+			//chuyển hướng đến trang không có kết quả
+			window.location.assign("https://google.com");
+		}
+	}
+</script>
+</html>
